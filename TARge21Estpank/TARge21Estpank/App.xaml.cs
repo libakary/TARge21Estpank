@@ -1,7 +1,7 @@
 ﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
-//using TARge21Estpank.Views;
+using TARge21Estpank.Views;
 using Windows.Graphics;
 #endif
 
@@ -29,6 +29,6 @@ public partial class App : Application
 		});
 #endif
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new StartPage());
 	}
 }

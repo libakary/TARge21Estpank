@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARge21Estpank.Views.StartPage"
+             Title="StartPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0072CE" Offset="0.0"/>
+            <GradientStop Color="#5DAFF1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <Border>
+            <VerticalStackLayout>
+                <Button
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Sisene"
+                    HorizontalOptions="Center"
+                    Margin="0,12,0,6"
+                    Clicked="Sisene_Clicked"/>
+
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+
+    
+</ContentPage>
