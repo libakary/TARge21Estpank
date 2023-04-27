@@ -11,12 +11,30 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
+    
     <Grid>
 
-        <Border>
+        <Grid>
+            
+            <Label
+                Margin="10,250"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Style="{StaticResource FrontPageTitleLabelStyle}"
+                Text="Estpank"/>
+            
+        </Grid>
+
+
+
+        <Border
+            Padding="24,32"
+            VerticalOptions="End"
+            Margin="20"
+            Stroke="{StaticResource BorderColor}">
             <VerticalStackLayout>
                 <Button
-                    Style="{StaticResource ButtonStyle}"
+                    Style="{StaticResource ButtonStyle1}"
                     Text="Sisene"
                     HorizontalOptions="Center"
                     Margin="0,12,0,6"
