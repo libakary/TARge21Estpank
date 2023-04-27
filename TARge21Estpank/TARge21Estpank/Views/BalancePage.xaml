@@ -19,7 +19,8 @@
                 HorizontalTextAlignment="Center"
                 Style="{StaticResource FrontPageTitleLabelStyle}"
                 LineBreakMode="WordWrap"
-                Text="Konto jääk 0.07€"/>
+                Text="Konto jääk 0.07€"
+                />
             <!--int kontojaak-->
                 
         </Grid>
