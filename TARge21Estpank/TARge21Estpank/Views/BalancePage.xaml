@@ -36,19 +36,35 @@
                    Text="{Binding AccountBalance, StringFormat='{0} €'}"
                    HorizontalOptions="Center"/>
         </StackLayout>
-
-        <StackLayout Grid.Row="1"
-                     Orientation="Horizontal"
-                     BackgroundColor="LightGray"
-                     Padding="5"
-                     VerticalOptions="End"
-                     Margin="10,10,10,30">
-            <Button Text="Logout" Clicked="OnLogOutClicked"
-                    HorizontalOptions="StartAndExpand"/>
-            <Button Text="Info" Clicked="OnInfoClicked"
-                    HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Details" Clicked="OnDetailsClicked"
-                    HorizontalOptions="EndAndExpand"/>
+        
+        <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="End"         
+            Padding="5"
+            Margin="10,10,10,10">
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="6,6,6,6"
+                Style="{StaticResource ButtonStyle2}"
+                Clicked="OnDetailsClicked"
+                Text="DETAILID" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                ZIndex="1"
+                Margin="6,10,6,4"
+                Style="{StaticResource ButtonStyle2}"
+                Clicked="OnInfoClicked"
+                Text="INFO" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                ZIndex="1"
+                Margin="6,10,6,4"
+                Style="{StaticResource ButtonStyle2}"
+                Clicked="OnLogOutClicked"
+                Text="LOGI VÄLJA" />
         </StackLayout>
     </Grid>
 

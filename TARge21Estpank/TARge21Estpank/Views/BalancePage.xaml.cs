@@ -27,6 +27,6 @@ public partial class BalancePage : ContentPage
 
     private async void OnDetailsClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Details", "These are some details", "OK");
+        await DisplayAlert("Detailid", "Siin on paar detaili", "OK");
     }
 }

@@ -8,21 +8,27 @@
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#0072CE" Offset="0.0"/>
             <GradientStop Color="#5DAFF1" Offset="1.0"/>
+
         </LinearGradientBrush>
     </ContentPage.Background>
 
-    
     <Grid>
-
+        
+        <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+        
         <Grid>
-            
+
             <Label
                 Margin="10,250"
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
                 Style="{StaticResource FrontPageTitleLabelStyle}"
                 Text="Estpank"/>
-            
+
         </Grid>
 
 
@@ -42,6 +48,8 @@
 
             </VerticalStackLayout>
         </Border>
+
+        
     </Grid>
 
     
