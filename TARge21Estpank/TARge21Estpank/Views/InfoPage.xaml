@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARge21Estpank.Views.InfoPage"
+             Title="InfoPage">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0072CE" Offset="0.0"/>
+            <GradientStop Color="#5DAFF1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Label Margin="10,250"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource FrontPageTitleLabelStyle}"
+                   Text="Estpank"/>
+        </Grid>
+
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     BackgroundColor="LightGray"
+                     Padding="5"
+                     VerticalOptions="End"
+                     Margin="10,10,10,30">
+            <Button Text="Back" Clicked="OnBackClicked"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="Info" Clicked="OnInfoClicked"
+                    HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Details" Clicked="OnDetailsClicked"
+                    HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

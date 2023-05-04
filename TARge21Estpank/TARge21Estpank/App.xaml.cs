@@ -10,7 +10,7 @@ namespace TARge21Estpank;
 public partial class App : Application
 {
 	const int WindowWidth = 540;
-	const int WindowHeight = 1400;
+	const int WindowHeight = 1000;
 
 	public App()
 	{
