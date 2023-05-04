@@ -50,7 +50,6 @@
     </Grid>
 
         <Grid
-            Orientation="Vertical"
             VerticalOptions="End"         
             Padding="5"
             Margin="10,10,10,10">

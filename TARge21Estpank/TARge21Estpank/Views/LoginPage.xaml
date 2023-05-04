@@ -24,15 +24,15 @@
             <Grid>
                 <Entry x:Name="UsernameEntry"
                        Style="{StaticResource EntryBoxStyle}"
-                   Placeholder="Mingi nimi - vaata passi kui ei mäleta"
+                       Placeholder="Mingi nimi - vaata passi kui ei mäleta"
                        ClearButtonVisibility="WhileEditing"
-                   Margin="0,0,0,40"/>
+                       Margin="0,0,0,40"/>
                 <Entry x:Name="PasswordEntry"
                        Style="{StaticResource EntryBoxStyle}"
-                   Placeholder="Parool - katseta palju tahad, meil piiranguid pole"
+                       Placeholder="Parool - katseta palju tahad, meil piiranguid pole"
                        ClearButtonVisibility="WhileEditing"
-                   IsPassword="True"
-                   Margin="0,40,0,1"/>
+                       IsPassword="True"
+                       Margin="0,40,0,0"/>
             </Grid>
         </Grid>
 
