@@ -12,45 +12,39 @@
     </ContentPage.Background>
 
     <Grid>
-        <Grid>
-            <Label Margin="10,250"
+        <Grid Padding="5"
+              VerticalOptions="Center"
+              Margin="10,10,10,10">
+            <Label Margin="0,-100,0,0"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"
                    Style="{StaticResource FrontPageTitleLabelStyle}"
                    Text="Estpank"/>
+
+            <Grid>
+                <Entry x:Name="UsernameEntry"
+                       Style="{StaticResource EntryBoxStyle}"
+                   Placeholder="Mingi nimi - vaata passi kui ei mäleta"
+                       ClearButtonVisibility="WhileEditing"
+                   Margin="0,0,0,40"/>
+                <Entry x:Name="PasswordEntry"
+                       Style="{StaticResource EntryBoxStyle}"
+                   Placeholder="Parool - katseta palju tahad, meil piiranguid pole"
+                       ClearButtonVisibility="WhileEditing"
+                   IsPassword="True"
+                   Margin="0,40,0,1"/>
+            </Grid>
         </Grid>
 
-        <VerticalStackLayout Margin="50,400">
-            <Entry x:Name="UsernameEntry"
-                   Placeholder="Mingi nimi - vaata passi kui ei mäleta"
-                   Text=""
-                   ClearButtonVisibility="WhileEditing"
-                   BackgroundColor="White"
-                   HorizontalOptions="Fill"
-                   TextColor="Black"/>
-            <Entry x:Name="PasswordEntry"
-                   Placeholder="Parool - katseta palju tahad, meil piiranguid pole"
-                   Text=""
-                   IsPassword="True"
-                   BackgroundColor="White"
-                   ClearButtonVisibility="WhileEditing"
-                   HorizontalOptions="Fill"
-                   Margin="0,10,0,0"
-                   TextColor="Black"/>
-        </VerticalStackLayout>
-        
-        
-        <Border Padding="24,32"
-                VerticalOptions="End"
-                Margin="20"
-                Stroke="{StaticResource BorderColor}">
-            <VerticalStackLayout>
-                <Button Style="{StaticResource ButtonStyle1}"
-                        Text="Sisene"
-                        HorizontalOptions="Center"
-                        Margin="0,12,0,6"
-                        Clicked="Sisene_Clicked"/>
-            </VerticalStackLayout>
-        </Border>
+        <Grid Padding="5"
+              VerticalOptions="End"
+              Margin="20">
+            <Button 
+                Style="{StaticResource ButtonStyle1}"
+                Text="Sisene"
+                HorizontalOptions="Center"
+                Margin="0,12,0,6"
+                Clicked="Sisene_Clicked"/>
+        </Grid>
     </Grid>
 </ContentPage>

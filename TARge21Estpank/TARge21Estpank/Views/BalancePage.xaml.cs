@@ -2,15 +2,18 @@ namespace TARge21Estpank.Views;
 
 public partial class BalancePage : ContentPage
 {
-    public decimal AccountBalance { get; set; }
+    public double AccountBalance { get; set; }
+    public string AccountBalanceDisplayed { get; set; }
 
-    public BalancePage(string username)
+
+	public BalancePage(string username)
     {
         InitializeComponent();
 
-        UsernameLabel.Text = $"Hello, {username}!";
+        UsernameLabel.Text = $"Tere, {username}!";
         Random random = new Random();
-        AccountBalance = (decimal)random.NextDouble() * 10000;
+		AccountBalance = (double)random.NextDouble() * 10000;
+        AccountBalanceDisplayed = AccountBalance.ToString("F");
 
         BindingContext = this;
     }
@@ -27,6 +30,6 @@ public partial class BalancePage : ContentPage
 
     private async void OnDetailsClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Details", "These are some details", "OK");
+        await DisplayAlert("Detailid", "These are some details", "OK");
     }
 }

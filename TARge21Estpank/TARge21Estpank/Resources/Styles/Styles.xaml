@@ -33,6 +33,33 @@
                 Opacity="0.5"/>
         </Setter>
     </Style>
+
+    <Style TargetType="Label" x:Key="BalanceDescriptionLabelStyle">
+        <Setter Property="LineBreakMode" Value="TailTruncation"/>
+        <Setter Property="FontAutoScalingEnabled" Value="False"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextColor" Value="DarkBlue"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="AccountBalanceLabelStyle">
+        <Setter Property="LineBreakMode" Value="TailTruncation"/>
+        <Setter Property="FontAutoScalingEnabled" Value="False"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="TextColor" Value="DarkBlue"/>
+    </Style>
+
+    <Style TargetType="Entry" x:Key="EntryBoxStyle">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HeightRequest" Value="20"/>
+        <Setter Property="WidthRequest" Value="300"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="Text" Value=""/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+    </Style>
     
 
     <!-- base style stuff -->

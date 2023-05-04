@@ -17,39 +17,51 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid>
-            <Label Margin="10,250"
+        <Grid Padding="5"
+              VerticalOptions="Start"
+              Margin="10,10,10,10">
+           
+        </Grid>
+
+
+        <Grid Padding="5"
+              VerticalOptions="Center"
+              Margin="10,10,10,10">
+
+            <Label Margin="0,-100,0,0"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"
                    Style="{StaticResource FrontPageTitleLabelStyle}"
                    Text="Estpank"/>
+
+            <Grid>
+                <Label x:Name="UsernameLabel"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"
+                   Style="{StaticResource BalanceDescriptionLabelStyle}"/>
+                <Label Text="Your account balance is"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0"
+                   Style="{StaticResource BalanceDescriptionLabelStyle}"/>
+                <Label x:Name="BalanceLabel"
+                   Text="{Binding AccountBalanceDisplayed, StringFormat='{0} €'}"
+                   HorizontalOptions="Center"
+                   Margin="0,70,0,0"
+                   Style="{StaticResource AccountBalanceLabelStyle}"/>
+            </Grid>
         </Grid>
 
-        <StackLayout Margin="50,400">
-            <Label x:Name="UsernameLabel"
-                   HorizontalOptions="Center"
-                   Margin="0,0,0,10"/>
-            <Label Text="Your account balance is"
-                   HorizontalOptions="Center"
-                   Margin="0,0,0,10"/>
-            <Label x:Name="BalanceLabel"
-                   Text="{Binding AccountBalance, StringFormat='{0} €'}"
-                   HorizontalOptions="Center"/>
-        </StackLayout>
-
-        <StackLayout Grid.Row="1"
-                     Orientation="Horizontal"
-                     BackgroundColor="LightGray"
-                     Padding="5"
-                     VerticalOptions="End"
-                     Margin="10,10,10,30">
+        <Grid BackgroundColor="LightGray"
+              Padding="5"
+              VerticalOptions="End"
+              Margin="10,10,10,20">
             <Button Text="Logout" Clicked="OnLogOutClicked"
                     HorizontalOptions="StartAndExpand"/>
             <Button Text="Info" Clicked="OnInfoClicked"
                     HorizontalOptions="CenterAndExpand"/>
             <Button Text="Details" Clicked="OnDetailsClicked"
                     HorizontalOptions="EndAndExpand"/>
-        </StackLayout>
+        </Grid>
     </Grid>
 
 </ContentPage>
