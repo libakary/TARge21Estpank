@@ -30,6 +30,6 @@ public partial class BalancePage : ContentPage
 
     private async void OnDetailsClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Detailid", "Siin on paar detaili", "OK");
+        await Navigation.PushAsync(new PaymentPage());
     }
 }

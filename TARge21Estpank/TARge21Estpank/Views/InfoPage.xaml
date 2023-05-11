@@ -16,6 +16,12 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+        
         <Grid>
             <Label Margin="10,250"
                    HorizontalOptions="Center"

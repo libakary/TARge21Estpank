@@ -12,6 +12,13 @@
     </ContentPage.Background>
 
     <Grid>
+
+        <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
@@ -58,7 +65,7 @@
                 <Button
                     Style="{StaticResource ButtonStyle2}"
                     Clicked="OnDetailsClicked"
-                    Text="DETAILID" />
+                    Text="MAKSED" />
                 <Button
                     Style="{StaticResource ButtonStyle2}"
                     Clicked="OnInfoClicked"

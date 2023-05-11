@@ -52,13 +52,14 @@
 
     <Style TargetType="Entry" x:Key="EntryBoxStyle">
         <Setter Property="FontSize" Value="20"/>
-        <Setter Property="HeightRequest" Value="20"/>
+        <Setter Property="HeightRequest" Value="50"/>
         <Setter Property="WidthRequest" Value="350"/>
         <Setter Property="TextColor" Value="Black"/>
         <Setter Property="FontFamily" Value="ScribbleBox"/>
         <Setter Property="BackgroundColor" Value="White"/>
         <Setter Property="Text" Value=""/>
         <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
     </Style>
 
     <!--piklik valge Button-->
@@ -73,6 +74,18 @@
         <Setter Property="BorderColor" Value="Black"/>
     </Style>
 
+    <!--valge ristkülik textbox-->
+    
+    <Style TargetType="Label" x:Key="LabelStyle1">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HeightRequest" Value="50"/>
+        <Setter Property="WidthRequest" Value="350"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="Text" Value=""/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+    </Style>
 
     <!-- base style stuff -->
     <Style TargetType="ActivityIndicator">
