@@ -16,26 +16,57 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid>
-            <Label Margin="10,250"
+        <Grid Padding="5"
+              VerticalOptions="Center"
+              Margin="10,10,10,10">
+
+            <Label Margin="0,-100,0,0"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"
                    Style="{StaticResource FrontPageTitleLabelStyle}"
                    Text="Estpank"/>
+
+            <VerticalStackLayout>
+                <Label x:Name="EmailLabel"
+                   Text="E-MaiL"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"
+                   Style="{StaticResource ContactsPageTitleLabelStyle}"/>
+                <Label x:Name="EmailAddressLabel"
+                   Text="estpank@yahoo.com"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"
+                   Style="{StaticResource ContactsPageLabelStyle}"/>
+                <Label x:Name="PhoneLabel"
+                   Text="Telefoninumber"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"
+                   Style="{StaticResource ContactsPageTitleLabelStyle}"/>
+                <Label x:Name="PhoneNrLabel"
+                   Text="539 3829 879"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"
+                   Style="{StaticResource ContactsPageLabelStyle}"/>
+            </VerticalStackLayout>
         </Grid>
 
-        <StackLayout Grid.Row="1"
-                     Orientation="Horizontal"
-                     BackgroundColor="LightGray"
-                     Padding="5"
-                     VerticalOptions="End"
-                     Margin="10,10,10,30">
-            <Button Text="Back" Clicked="OnBackClicked"
-                    HorizontalOptions="StartAndExpand"/>
-            <Button Text="Info" Clicked="OnInfoClicked"
-                    HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Details" Clicked="OnDetailsClicked"
-                    HorizontalOptions="EndAndExpand"/>
-        </StackLayout>
+        <Grid
+            VerticalOptions="End"         
+            Padding="5"
+            Margin="10,10,10,10">
+
+            <VerticalStackLayout>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnCallClicked"
+                    Text="HELISTA"/>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnBackClicked"
+                    Text="TAGASI" 
+                    Margin="0,5,0,0"/>
+
+            </VerticalStackLayout>
+        </Grid>
     </Grid>
 </ContentPage>

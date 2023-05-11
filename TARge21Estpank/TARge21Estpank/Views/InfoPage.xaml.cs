@@ -12,13 +12,9 @@ public partial class InfoPage : ContentPage
         await Navigation.PopAsync();
     }
 
-    private async void OnInfoClicked(object sender, EventArgs e)
+    //see kontaktid nupp
+    private async void OnCallClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Rohkem infot", "Veel infot", "Tagasi");
-    }
-
-    private async void OnDetailsClicked(object sender, EventArgs e)
-    {
-        await DisplayAlert("Kasutaja info", "Mingi info", "Tagasi");
+        await DisplayAlert("Helistamine...", "Teises aknas avaneb kõnerakendus.", "Tagasi");
     }
 }

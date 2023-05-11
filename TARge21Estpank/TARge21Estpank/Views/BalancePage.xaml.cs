@@ -23,13 +23,15 @@ public partial class BalancePage : ContentPage
         await Navigation.PopAsync();
     }
 
+    //see kontaktid nupp
     private async void OnInfoClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new InfoPage(UsernameLabel.Text, BalanceLabel.Text));
     }
 
+    //see maksed nupp
     private async void OnDetailsClicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Detailid", "Siin on paar detaili", "OK");
+        await DisplayAlert("Info", "Siin on paar detaili", "OK");
     }
 }

@@ -38,7 +38,7 @@
         <Setter Property="LineBreakMode" Value="TailTruncation"/>
         <Setter Property="FontAutoScalingEnabled" Value="False"/>
         <Setter Property="FontFamily" Value="ScribbleBox"/>
-        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontSize" Value="25"/>
         <Setter Property="TextColor" Value="DarkBlue"/>
     </Style>
 
@@ -71,6 +71,23 @@
         <Setter Property="BackgroundColor" Value="White"/>
         <Setter Property="BorderWidth" Value="5"/>
         <Setter Property="BorderColor" Value="Black"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="ContactsPageLabelStyle">
+        <Setter Property="LineBreakMode" Value="TailTruncation"/>
+        <Setter Property="FontAutoScalingEnabled" Value="False"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="TextColor" Value="DarkBlue"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="ContactsPageTitleLabelStyle">
+        <Setter Property="LineBreakMode" Value="TailTruncation"/>
+        <Setter Property="FontAutoScalingEnabled" Value="False"/>
+        <Setter Property="FontFamily" Value="ScribbleBox"/>
+        <Setter Property="FontSize" Value="35"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="TextDecorations" Value="Underline"/>
     </Style>
 
 

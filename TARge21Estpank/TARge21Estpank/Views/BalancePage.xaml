@@ -37,7 +37,7 @@
                    HorizontalOptions="Center"
                    Margin="0,0,0,0"
                    Style="{StaticResource BalanceDescriptionLabelStyle}"/>
-                <Label Text="Your account balance is"
+                <Label Text="Sinu kontojääk on"
                    HorizontalOptions="Center"
                    Margin="0,20,0,0"
                    Style="{StaticResource BalanceDescriptionLabelStyle}"/>
@@ -46,8 +46,8 @@
                    HorizontalOptions="Center"
                    Margin="0,70,0,0"
                    Style="{StaticResource AccountBalanceLabelStyle}"/>
+            </Grid>
         </Grid>
-    </Grid>
 
         <Grid
             VerticalOptions="End"         
@@ -58,11 +58,11 @@
                 <Button
                     Style="{StaticResource ButtonStyle2}"
                     Clicked="OnDetailsClicked"
-                    Text="DETAILID" />
+                    Text="MAKSED" />
                 <Button
                     Style="{StaticResource ButtonStyle2}"
                     Clicked="OnInfoClicked"
-                    Text="INFO"
+                    Text="KONTAKTID"
                     Margin="0,5,0,0"/>
                 <Button
                     Style="{StaticResource ButtonStyle2}"
