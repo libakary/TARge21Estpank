@@ -39,7 +39,7 @@
                    Style="{StaticResource BalanceDescriptionLabelStyle}"/>
                 <Label Text="Sinu kontojääk on"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,0"
+                   Margin="0,30,0,0"
                    Style="{StaticResource BalanceDescriptionLabelStyle}"/>
                 <Label x:Name="BalanceLabel"
                    Text="{Binding AccountBalanceDisplayed, StringFormat='{0} €'}"
