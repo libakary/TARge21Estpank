@@ -53,29 +53,24 @@
             VerticalOptions="End"         
             Padding="5"
             Margin="10,10,10,10">
-            <Button
-                Grid.Row="2"
-                Grid.Column="0"
-                Margin="6,6,6,6"
-                Style="{StaticResource ButtonStyle2}"
-                Clicked="OnDetailsClicked"
-                Text="DETAILID" />
-            <Button
-                Grid.Row="3"
-                Grid.Column="1"
-                ZIndex="1"
-                Margin="6,10,6,4"
-                Style="{StaticResource ButtonStyle2}"
-                Clicked="OnInfoClicked"
-                Text="INFO" />
-            <Button
-                Grid.Row="3"
-                Grid.Column="1"
-                ZIndex="1"
-                Margin="6,10,6,4"
-                Style="{StaticResource ButtonStyle2}"
-                Clicked="OnLogOutClicked"
-                Text="LOGI VÄLJA" />
+
+            <VerticalStackLayout>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnDetailsClicked"
+                    Text="DETAILID" />
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnInfoClicked"
+                    Text="INFO"
+                    Margin="0,5,0,0"/>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnLogOutClicked"
+                    Text="LOGI VÄLJA" 
+                    Margin="0,5,0,0"/>
+
+            </VerticalStackLayout>
         </Grid>
     </Grid>
 
