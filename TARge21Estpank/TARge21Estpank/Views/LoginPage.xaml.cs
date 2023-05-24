@@ -2,8 +2,6 @@ namespace TARge21Estpank.Views
 {
     public partial class LoginPage : ContentPage
     {
-		//public string adminUsername { get; set; }
-		//public int adminPassword { get; set; }
 		public LoginPage()
         {
             InitializeComponent();
@@ -16,13 +14,19 @@ namespace TARge21Estpank.Views
         {
             if (!string.IsNullOrEmpty(UsernameEntry.Text) && !string.IsNullOrEmpty(PasswordEntry.Text))
             {
-                await Navigation.PushAsync(new BalancePage(UsernameEntry.Text));
-                await DisplayAlert("Õnnestus", $"Tere, {UsernameEntry.Text}!", "Edasi");
-            }
-            //else ((UsernameEntry.ToString != adminUsername.ToString) && (PasswordEntry.ToString != adminPassword.ToString))
-            //{
+                string username = UsernameEntry.Text;
+                string password = PasswordEntry.Text;
 
-            //}
+                if (username == "admin" && password == "1234")
+                {
+                    await Navigation.PushAsync(new BalancePage(username));
+                    await DisplayAlert("Õnnestus", $"Tere, {username}!", "Edasi");
+                }
+                else
+                {
+                    await DisplayAlert("Viga", "Vale kasutajanimi või parool.", "Tagasi");
+                }
+            }
             else
             {
                 await DisplayAlert("Viga", "Proovi uuesti, äkki veab.", "Tagasi");
