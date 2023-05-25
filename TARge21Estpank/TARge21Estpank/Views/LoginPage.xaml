@@ -31,12 +31,12 @@
             <Grid>
                 <Entry x:Name="UsernameEntry"
                        Style="{StaticResource EntryBoxStyle}"
-                       Placeholder="Mingi nimi - vaata passi kui ei mäleta"
+                       Placeholder="Kasutajanimi"
                        ClearButtonVisibility="WhileEditing"
                        Margin="0,10,0,80"/>
                 <Entry x:Name="PasswordEntry"
                        Style="{StaticResource EntryBoxStyle}"
-                       Placeholder="Parool - katseta palju tahad, meil piiranguid pole"
+                       Placeholder="Parool"
                        ClearButtonVisibility="WhileEditing"
                        IsPassword="True"
                        Margin="0,80,0,0"/>
