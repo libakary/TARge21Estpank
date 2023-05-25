@@ -39,7 +39,7 @@
         <Setter Property="FontAutoScalingEnabled" Value="False"/>
         <Setter Property="FontFamily" Value="ScribbleBox"/>
         <Setter Property="FontSize" Value="25"/>
-        <Setter Property="TextColor" Value="DarkBlue"/>
+        <Setter Property="TextColor" Value="White"/>
     </Style>
 
     <Style TargetType="Label" x:Key="AccountBalanceLabelStyle">
@@ -47,7 +47,7 @@
         <Setter Property="FontAutoScalingEnabled" Value="False"/>
         <Setter Property="FontFamily" Value="ScribbleBox"/>
         <Setter Property="FontSize" Value="50"/>
-        <Setter Property="TextColor" Value="DarkBlue"/>
+        <Setter Property="TextColor" Value="White"/>
     </Style>
 
     <Style TargetType="Entry" x:Key="EntryBoxStyle">
