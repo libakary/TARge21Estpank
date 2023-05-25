@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARge21Estpank.Views.InfoPage"
+             Title="InfoPage">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0072CE" Offset="0.0"/>
+            <GradientStop Color="#5DAFF1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+        
+        <Grid>
+            <Label Margin="10,250"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource FrontPageTitleLabelStyle}"
+                   Text="Estpank"/>
+
+            <VerticalStackLayout>
+                <Label x:Name="EmailLabel"
+                   Text="E-MaiL"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"
+                   Style="{StaticResource ContactsPageTitleLabelStyle}"/>
+                <Label x:Name="EmailAddressLabel"
+                   Text="estpank@yahoo.com"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"
+                   Style="{StaticResource ContactsPageLabelStyle}"/>
+                <Label x:Name="PhoneLabel"
+                   Text="Telefoninumber"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"
+                   Style="{StaticResource ContactsPageTitleLabelStyle}"/>
+                <Label x:Name="PhoneNrLabel"
+                   Text="539 3829 879"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"
+                   Style="{StaticResource ContactsPageLabelStyle}"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <Grid
+            VerticalOptions="End"         
+            Padding="5"
+            Margin="10,10,10,10">
+
+            <VerticalStackLayout>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnCallClicked"
+                    Text="HELISTA"/>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnBackClicked"
+                    Text="TAGASI" 
+                    Margin="0,5,0,0"/>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

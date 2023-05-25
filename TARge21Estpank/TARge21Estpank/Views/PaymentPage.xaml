@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARge21Estpank.Views.PaymentPage"
+             Title="PaymentPage">
+
+    <ContentPage.Background>
+        
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0072CE" Offset="0.0"/>
+            <GradientStop Color="#5DAFF1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            
+        </Grid.RowDefinitions>
+
+        <Grid Padding="0"
+              VerticalOptions="Start">
+        </Grid>
+
+        <Grid Padding="0"
+              VerticalOptions="Center">
+
+            <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+
+            <VerticalStackLayout>
+                
+                <Label Margin="0,10,0,0"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource FrontPageTitleLabelStyle}"
+                   Text="Estpank"/>
+                
+                <Entry x:Name="TeineKontoNr"
+                       Style="{StaticResource EntryBoxStyle}"
+                       Placeholder="Konto number"
+                       ClearButtonVisibility="WhileEditing"
+                       Margin="0,40,0,40"/>
+
+                <Border Stroke="#5e5e5e"
+                        StrokeThickness="1"
+                        StrokeShape="RoundRectangle 5,5,5,5"
+                        
+                        HorizontalOptions="Center">
+                    <Label x:Name="BalanceLabel"
+                           Text="{Binding AccountBalanceDisplayed, StringFormat='{0} €'}"
+                           VerticalTextAlignment="Center"
+                           Padding="10,0,0,0"
+                           Margin="0,0,0,0"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource LabelStyle1}"/>
+                </Border>
+
+                <Entry x:Name="MakseSuurus"
+                       Style="{StaticResource EntryBoxStyle}"
+                       Placeholder="Makse suurus"
+                       ClearButtonVisibility="WhileEditing"
+                       Margin="0,40,0,40"/>
+
+                <Button 
+                Style="{StaticResource ButtonStyle1}"
+                Text="Maksa"
+                HorizontalOptions="Center"
+                Margin="0,12,0,6"
+                Clicked="Makstud_Clicked"/>
+
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Text="Tagasi" 
+                    Margin="30,40,30,0"
+                    Clicked="OnBackClicked1"/>
+
+            </VerticalStackLayout>   
+        </Grid>
+        
+    </Grid>
+</ContentPage>

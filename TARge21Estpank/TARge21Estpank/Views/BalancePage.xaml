@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARge21Estpank.Views.BalancePage"
+             Title="Balance Page">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0072CE" Offset="0.0"/>
+            <GradientStop Color="#5DAFF1" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <Image
+            x:Name="backgroundImage"
+            Source="rukkililled.png"
+            Aspect="AspectFill"
+            HorizontalOptions="Start"/>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--<Grid Padding="5"
+              VerticalOptions="Start"
+              Margin="10,10,10,10">
+        </Grid>-->
+
+        <Grid Padding="5"
+              VerticalOptions="Center"
+              Margin="10,10,10,10">
+
+            <Label Margin="0,-100,0,0"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource FrontPageTitleLabelStyle}"
+                   Text="Estpank"/>
+
+            <Grid>
+                <Label x:Name="UsernameLabel"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0"
+                   Style="{StaticResource BalanceDescriptionLabelStyle}"/>
+                <Label Text="Sinu kontojääk on"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,0"
+                   Style="{StaticResource BalanceDescriptionLabelStyle}"/>
+                <Label x:Name="BalanceLabel"
+                   Text="{Binding AccountBalanceDisplayed, StringFormat='{0} €'}"
+                   HorizontalOptions="Center"
+                   Margin="0,70,0,0"
+                   Style="{StaticResource AccountBalanceLabelStyle}"/>
+            </Grid>
+        </Grid>
+
+        <Grid
+            VerticalOptions="End"         
+            Padding="5"
+            Margin="10,10,10,10">
+
+            <VerticalStackLayout>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnDetailsClicked"
+                    Text="MAKSED" />
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnInfoClicked"
+                    Text="KONTAKTID"
+                    Margin="0,5,0,0"/>
+                <Button
+                    Style="{StaticResource ButtonStyle2}"
+                    Clicked="OnLogOutClicked"
+                    Text="LOGI VÄLJA" 
+                    Margin="0,5,0,0"/>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>
